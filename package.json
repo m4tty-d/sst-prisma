@@ -1,0 +1,33 @@
+{
+  "name": "sst-prisma",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "test": "sst test",
+    "start": "sst start",
+    "build": "sst build",
+    "deploy": "sst deploy",
+    "destroy": "sst remove",
+    "prisma:generate": "yarn prisma generate"
+  },
+  "eslintConfig": {
+    "extends": [
+      "serverless-stack"
+    ]
+  },
+  "devDependencies": {
+    "@tsconfig/node14": "^1.0.1",
+    "@types/aws-lambda": "^8.10.70",
+    "@types/fs-extra": "^9.0.13",
+    "@types/node": "<15.0.0",
+    "prisma": "^3.9.1",
+    "typescript": "^4.5.5"
+  },
+  "dependencies": {
+    "@prisma/client": "^3.9.1",
+    "@serverless-stack/cli": "0.61.0",
+    "@serverless-stack/resources": "0.61.0",
+    "aws-cdk-lib": "2.7.0",
+    "fs-extra": "^10.0.0"
+  }
+}

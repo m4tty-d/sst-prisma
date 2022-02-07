@@ -1,0 +1,7 @@
+{
+  "extends": "@tsconfig/node14",
+  "include": ["stacks", "src"],
+  "compilerOptions": {
+    "useUnknownInCatchVariables": false,
+  }
+}
